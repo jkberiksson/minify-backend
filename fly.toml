@@ -7,7 +7,7 @@ app = 'minify-backend'
 primary_region = 'ams'
 
 [build]
-  dockerfile = "Dockerfile"  # Specify the Dockerfile path here
+  dockerfile = "Dockerfile"
 
 [http_service]
   internal_port = 3000
@@ -19,6 +19,6 @@ primary_region = 'ams'
 
 [[vm]]
   memory = '4gb'
-  cpu_kind = 'shared'
-  cpus = 2
+  cpu_kind = 'performance'
+  cpus = 16
   memory_mb = 2048
