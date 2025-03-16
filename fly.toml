@@ -18,7 +18,7 @@ primary_region = 'ams'
   processes = ['app']
 
 [[vm]]
-  memory = '2gb'
-  cpu_kind = 'shared'
-  cpus = 1
-  memory_mb = 2048
+  memory = '4gb'  # Increase memory to 4 GB
+  cpu_kind = 'dedicated'  # Use a dedicated CPU for better performance
+  cpus = 2  # Use 2 CPUs for better parallel processing
+  memory_mb = 4096  # Reflect the increased memory
