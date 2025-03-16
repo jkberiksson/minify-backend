@@ -15,5 +15,5 @@ primary_region = 'ams'
 [[vm]]
   memory = '32gb'
   cpu_kind = 'shared'
-  cpus = 16
+  cpus = 8
   memory_mb = 32768
