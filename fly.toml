@@ -1,12 +1,10 @@
-# fly.toml app configuration file generated for minify-backend-rpcfza on 2025-03-16T17:01:03Z
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
+
 
 app = 'minify-backend-rpcfza'
 primary_region = 'ams'
 
 [build]
+  dockerfile = "Dockerfile"
 
 [http_service]
   internal_port = 3000
