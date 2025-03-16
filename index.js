@@ -84,7 +84,7 @@ app.post('/upload-video', upload.single('video'), async (req, res) => {
         .videoBitrate(`${newBitrate}k`)
         .outputOptions('-b:v', `${newBitrate}k`)
         .audioBitrate('128k')
-        .outputOptions(['-preset slow', '-g 50'])
+        .outputOptions(['-preset fast', '-g 50'])
         .outputFormat('mp4')
         .on('end', async () => {
             console.log('Compression completed. Generating thumbnail...');
